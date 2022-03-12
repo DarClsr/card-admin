@@ -19,8 +19,52 @@
 .justify-content-center{
     justify-content: center;
 }
+.text-align{
+    text-align: center;
+}
 
 .mx-4{
     margin:0 .8rem ;
+}
+.mx-2{
+    margin-left: .5rem!important;
+    margin-right: .5rem!important;
+}
+.mt-5{
+    margin-top: 3rem !important;
+}
+
+.my-5{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.py-5{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.py-1{
+    padding: 1rem;
+}
+.mb-5{
+    margin-bottom:3rem!important
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    color: #495057;
+    line-height: 1.2;
+    margin-bottom: 1rem;;
+}
+.h4,h4{
+    font-size: calc(1.25625rem + .075vw);
+}
+.text-primary{
+    color: var(--el-color-primary);
+}
+
+.text-center{
+    text-align: center;
+}
+.text-uppercase{
+    text-transform: uppercase;
 }
 

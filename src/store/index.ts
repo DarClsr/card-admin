@@ -1,19 +1,21 @@
+import { IUserInfo } from '@/api/types/common';
 import { createStore } from 'vuex'
+import { setItem,getItem } from "@/utils/storage"
+import {USER} from "@/utils/constans"
 
-interface State {
-  count:number
+const state={
+  user:getItem<IUserInfo>(USER)
 }
+
+export type  State = typeof state;
 
 // 创建一个新的 store 实例
 const store = createStore<State>({
-  state () {
-    return {
-      count: 0
-    }
-  },
+  state,
   mutations: {
-    increment (state) {
-      state.count++
+    setUser (state,user) {
+      state.user=user;
+      setItem(USER,state.user);
     }
   }
 })

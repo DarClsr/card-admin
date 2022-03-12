@@ -76,7 +76,7 @@ defineProps({
   }
 }
 
-v-deep.el-menu {
+::deep.el-menu {
   border: 0;
 }
 

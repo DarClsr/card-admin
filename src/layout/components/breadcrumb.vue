@@ -10,11 +10,7 @@
  import { computed } from "vue";
 import {useRouter} from "vue-router";
 import { ArrowRight } from '@element-plus/icons-vue'
-
  const router=useRouter();
-
- console.log(router.currentRoute.value.matched)
-
 const routes=computed(()=>{
     return router.currentRoute.value.matched.filter(item=>item.meta.title)
 })

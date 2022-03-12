@@ -6,6 +6,19 @@ import { ILoginInfo } from './types/common';
 
 
 
+/**
+ * 登录
+ * @param  account password
+ * @returns  
+ */
 export const login=(params:ILoginParams)=>{
-    return http.post<ILoginInfo>("login",params)
+    return http.post<ILoginInfo>("auth/login",params)
+}
+
+/**
+ * 退出登录
+ * 
+ */
+ export const logout=()=>{
+    return http.post("auth/logout")
 }
