@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^1.0.1",
+    "apexcharts": "^3.33.2",
     "axios": "^0.26.0",
     "element-plus": "^2.0.4",
     "esbuild": "^0.14.23",
     "nprogress": "^0.2.0",
     "vue": "^3.2.25",
     "vue-router": "4",
+    "vue3-apexcharts": "^1.4.1",
     "vuex": "^4.0.2"
   },
   "devDependencies": {

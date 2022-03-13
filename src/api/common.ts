@@ -22,3 +22,11 @@ export const login=(params:ILoginParams)=>{
  export const logout=()=>{
     return http.post("auth/logout")
 }
+
+/**
+ * 百度网盘授权
+ * 
+ */
+ export const authDisk=()=>{
+    return http.get("auth/netDisk")
+}

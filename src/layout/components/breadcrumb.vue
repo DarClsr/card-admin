@@ -1,5 +1,5 @@
 <template>
- <el-breadcrumb :separator-icon="ArrowRight">
+ <el-breadcrumb :separator-icon="ArrowRight" class="menu">
     <el-breadcrumb-item v-for="item in routes" :key="item.path" :to="{ path: item.path }">
     {{item.meta.title}}
     </el-breadcrumb-item>
@@ -16,3 +16,12 @@ const routes=computed(()=>{
 })
 
 </script>
+
+<style lang="scss" scoped>
+.menu{
+  background-color: #fff;
+  padding: 1rem;
+  width: 100%;
+}
+
+</style>

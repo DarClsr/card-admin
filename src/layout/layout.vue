@@ -60,7 +60,8 @@ const setCollapse = (value: boolean) => {
   .el-main {
     color: var(--el-text-color-primary);
     text-align: center;
-    line-height: 160px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
   }
 }
 </style>
