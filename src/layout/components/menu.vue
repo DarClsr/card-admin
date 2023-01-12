@@ -41,12 +41,31 @@
         <el-menu-item index="/admin_list">管理员列表</el-menu-item>
       </el-menu-item-group>
     </el-sub-menu>
+    <el-sub-menu index="/video" class="sub-menu-item">
+      <template #title>
+        <el-icon size="36"><VideoCameraFilled /></el-icon>
+        <span>视频</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="/video_make">制作视频</el-menu-item>
+      </el-menu-item-group>
+    </el-sub-menu>
+
+    <el-sub-menu index="/game" class="sub-menu-item">
+      <template #title>
+        <el-icon size="36"><VideoCameraFilled /></el-icon>
+        <span>游戏</span>
+      </template>
+      <el-menu-item-group>
+        <el-menu-item index="/game_list">游戏列表</el-menu-item>
+      </el-menu-item-group>
+    </el-sub-menu>
   </el-menu>
 </template>
 
 <script lang="ts" setup>
 import { defineProps } from "vue";
-import { House, Postcard } from "@element-plus/icons-vue";
+import { House, Postcard,VideoCameraFilled } from "@element-plus/icons-vue";
 defineProps({
   isCollapse: Boolean,
 });

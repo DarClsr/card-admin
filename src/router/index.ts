@@ -2,14 +2,14 @@ import { useStore } from 'vuex';
 import { createRouter, RouteRecordRaw,createWebHashHistory } from "vue-router";
 import shopRoute from "./modules/shop"
 import cardRoute from "./modules/card"
+import VideoRoute from "./modules/video"
+import gameRoute from "./modules/game"
 import nprogress from "nprogress"
 import "nprogress/nprogress.css"
 import store from "@/store";
-
-
-
 import Layout from "@/layout/layout.vue"
-import { userInfo } from 'os';
+
+
 const routes:RouteRecordRaw[]=[
    {
        path:"/",
@@ -28,6 +28,8 @@ const routes:RouteRecordRaw[]=[
         },
         shopRoute,
         cardRoute,
+        VideoRoute,
+        gameRoute,
        ]
    },
    {

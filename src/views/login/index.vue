@@ -95,19 +95,20 @@ const submit = async () => {
     return false;
   }
   loading.value = true;
-  const { data } = await login(formParams).finally(() => (loading.value = false));
+  // const { data } = await login(formParams).finally(() => (loading.value = false));
   store.commit("setUser", {
-    ...data.user,
-    token: data.token,
+    // ...data.user,
+    username:"iwan",
+    token: "45das4d5as",
+    // token: data.token,
   });
   ElMessage.success("登陆成功");
-  console.log(route.query)
   let redirectUrl = route.query.redirect||"/";
   if ( typeof redirectUrl !== "string") {
     redirectUrl = "/";
   }
 
-  console.log(redirectUrl,"redirect")
+  console.log(redirectUrl,"url")
   router.replace(redirectUrl);
 };
 </script>
